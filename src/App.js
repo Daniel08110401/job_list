@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import SearchBar from './searchBar';
+import JobList from './jobList';
+import './style.css'
 
 function App() {
+  const [jobs, setJobs] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
+
+  useEffect(() => {
+    // Fetch jobs from your API when the component mounts
+    fetchJobs();
+  }, []);
+
+  const fetchJobs = async () => {
+    // Replace with your API call
+    const response = await fetch('/api/jobs');
+    const data = await response.json();
+    setJobs(data);
+  };
+
+  const handleSearch = term => {
+    setSearchTerm(term);
+    // Optionally, fetch jobs based on the search term
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SearchBar onSearch={handleSearch} />
+      <JobList jobs={jobs} searchTerm={searchTerm} />
     </div>
   );
 }
+
 
 export default App;

@@ -1,0 +1,68 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Styling for the search bar form */
+  form {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Styling for the input field */
+  input[type="text"] {
+    width: 300px; /* Adjust width as needed */
+    height: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: none; /* Remove default styles */
+    outline: none; /* Remove the outline */
+    margin-right: 10px; /* Spacing between input field and button */
+  }
+  
+  /* Styling for the submit button */
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f8f8f8; /* Light grey background */
+    color: black;
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #e8e8e8; /* Slightly darker grey on hover */
+  }
+  
+  /* Add some space at the top */
+  .App {
+    padding-top: 50px;
+  }
+  
+  /* Styling for individual job items */
+  .job-item {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+  }
+  
+  .job-item h3 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .job-item p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
