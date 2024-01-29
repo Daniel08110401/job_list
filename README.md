@@ -29,14 +29,5 @@ We welcome contributions to this project. If you want to contribute, please:
 4. Push to the branch (`git push origin feature/YourFeatureName`).
 5. Create a new Pull Request.
 
-## License
-This project is licensed under the [Your License Choice]. For more details, see the LICENSE file in the repository.
-
-## Contact
-For any inquiries or contributions, please contact [Your Contact Information].
-
-## Acknowledgments
-- [Acknowledgments for any third-party resources, libraries, or tutorials used in the project]
-
 
 
